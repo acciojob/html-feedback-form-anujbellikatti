@@ -9,33 +9,22 @@
 <body>
 	<!-- the entire body must be written by student -->
 
-	<form>
-		<h1>Feedback Form</h1>
-		<br>
-		<div>
-		
-		<lable for = "name" >name</lable> <br>
-		<input type = "text" id = "name" minlength = "3" maxlength = "50">
-		<div>
-		
-		<div>
-		<lable for = "portfolio" >portfolio</lable> <br>
-		<input type = "url" id = "portfolio">
-		<div>
-
-			<div>
-				<lable for = "favColor">fav color</lable><br>
-				<input type = "text" id = "favColor">
-			<div>
-		
-			<div>
-			<lable for = "likeness">likeness</lable><br>
-				<input type = "text" id = "likeness" minlength = "1" maxlength = "100">
-			<div>
-				
-			<br>
-	<button type="submit">Submit</button>
-	</form>
+	<h1>Feedback Form</h1>
+	<form method="post">
+            <label for="name">Name:</label>
+            <input type="text" minlength="3" maxlength="50" id="name" name="name" required>
+            <br><br>
+            <label for="portfolio">Portfolio:</label>
+            <input type="url" id="portfolio" name="portfolio" required>
+            <br><br>
+            <label for="favColor">Select your favorite color:</label>
+            <input type="color" id="favColor" name="favcolor" required>
+            <br><br>
+            <label for="likeness">Likeness</label>
+            <input type="range" min="1" max="100" id="likeness" required>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
     <script type="text/javascript" src="./script.js">
 </script>
 
